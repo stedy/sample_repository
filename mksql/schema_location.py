@@ -1,7 +1,7 @@
 import csv
 import sqlite3
 
-connection = sqlite3.connect('../tsadb.db')
+connection = sqlite3.connect('../sample_repo.db')
 connection.text_factory = str
 cursor = connection.cursor()
 

@@ -8,10 +8,10 @@ from werkzeug import check_password_hash, generate_password_hash, \
         secure_filename
 from contextlib import closing
 
-DATABASE = 'tsadb.db'
+DATABASE = 'sample_repo.db'
 DEBUG = True
 SECRET_KEY = 'development key'
-USERNAME = 'zachs'
+USERNAME = 'srtest'
 PASSWORD = 'pwd2012'
 ALLOWED_EXTENSIONS = set(['csv', 'txt', 'CSV'])
 UPLOAD_FOLDER = 'uploads'
