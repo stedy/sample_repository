@@ -1,3 +1,4 @@
 *.db
+*.pg
 *.pyc
 static/sorttable.js

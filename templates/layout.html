@@ -1,12 +1,20 @@
 <!doctype html>
-<title>Microbiome Study</title>
+<title>Sample repository db</title>
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
-  <a href="{{ url_for('main') }}" style="text-decoration:none"><h1>Microbiome Study Tracking Form</h1></a>
-  <div class=metanav>
-</div>
-  {% for message in get_flashed_messages() %}
+  <a href="{{ url_for('pt_demo') }}" style="text-decoration:none"><h1>Sample repository DB</h1></a>
+    <div class=metanav>
+    {% if session.logged_in %}
+	<a href="{{ url_for('multiple_search') }}">Upload file</a> |
+	<a href="{{ url_for('all_samples') }}">All samples</a> |
+	<a href="{{ url_for('query') }}">Individual query</a> |
+	<a href="{{ url_for('logout') }}">log out</a> 
+    {% else %}
+	<a href="{{ url_for('login') }}">log in</a> 
+    {% endif %}
+    </div>
+    {% for message in get_flashed_messages() %}
     <div class=flash>{{ message }}</div>
     
     {% endfor %}

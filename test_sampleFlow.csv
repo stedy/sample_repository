@@ -1,0 +1,201 @@
+"irs.id","proj.id","proj.tube.no","proj.cell","date.out","shipped.to","sent.to","received.logical"
+"IDS-0000001","IDS-001",0,12,2012-10-07,"NA","The Shire",NA
+"IDS-0000002","IDS-002",11,9,2010-05-07,"Aragorn","Lothlorien",2010-10-30
+"IDS-0000003","IDS-003",37,12,2013-01-21,"Frodo Baggins","Lothlorien",NA
+"IDS-0000004","IDS-004",201,14,2010-05-29,"Meei-Li Huang","The Shire",2010-12-10
+"IDS-0000005","IDS-005",16,10,2011-12-17,"Jane Kuypers","Isengard",2012-04-29
+"IDS-0000006","IDS-006",42,4,2012-04-23,"Boromir","Iron Hills",2012-10-12
+"IDS-0000007","IDS-007",2,16,2010-11-16,"Aragorn","Molecular Diagnostics",2011-05-17
+"IDS-0000008","IDS-008",18,16,2011-11-22,"Gandalf the Grey","Rohan",2012-05-02
+"IDS-0000009","IDS-001",95,22,2013-01-09,"Meriadoc Brandybuck","Rivendell",NA
+"IDS-0000010","IDS-002",1,5,2010-10-02,"NA","Rohan",2011-02-11
+"IDS-0000011","IDS-003",73,46,2011-11-07,"Peregrin Took","Rivendell",2012-05-04
+"IDS-0000012","IDS-004",102,22,2010-05-31,"Bilbo Baggins","Isengard",2010-11-21
+"IDS-0000013","IDS-005",27,21,2012-09-28,"Gimli son of Gloin","Rohan",NA
+"IDS-0000014","IDS-006",21,10,2012-08-14,"not yet shipped","aliquoted in house",2012-09-13
+"IDS-0000015","IDS-007",11,69,2011-11-16,"Jane Kuypers","Iron Hills",2011-11-18
+"IDS-0000016","IDS-008",55,19,2010-04-18,"not yet shipped","Rivendell",2010-05-19
+"IDS-0000017","IDS-001",45,14,2011-07-07,"Boromir","Rohan",2011-10-18
+"IDS-0000018","IDS-002",38,45,2012-07-19,"Peregrin Took","aliquoted in house",2012-09-08
+"IDS-0000019","IDS-003",62,35,2010-08-02,"Frodo Baggins","aliquoted in house",2010-12-28
+"IDS-0000020","IDS-004",100,19,2011-06-14,"Jane Kuypers","Rivendell",2011-09-10
+"IDS-0000021","IDS-005",26,24,2011-03-08,"Aragorn","Lothlorien",2011-07-17
+"IDS-0000022","IDS-006",16,28,2012-11-14,"Jane Kuypers","Isengard",2013-01-28
+"IDS-0000023","IDS-007",56,25,2011-05-18,"Aragorn","Molecular Diagnostics",2011-07-29
+"IDS-0000024","IDS-008",106,29,2010-10-25,"Frodo Baggins","Rohan",2011-04-09
+"IDS-0000025","IDS-001",66,36,2010-01-29,"Peregrin Took","Molecular Diagnostics",2010-03-17
+"IDS-0000026","IDS-002",57,40,2012-06-02,"Aragorn","Iron Hills",2012-07-12
+"IDS-0000027","IDS-003",103,11,2011-01-11,"Jane Kuypers","Lothlorien",2011-04-14
+"IDS-0000028","IDS-004",81,35,2011-12-22,"Aragorn","Rohan",2012-02-19
+"IDS-0000029","IDS-005",39,48,2010-04-26,"Meriadoc Brandybuck","Molecular Diagnostics",2010-08-29
+"IDS-0000030","IDS-006",35,66,2012-09-01,"NA","Iron Hills",NA
+"IDS-0000031","IDS-007",131,25,2012-03-20,"Jane Kuypers","Rivendell",2012-06-30
+"IDS-0000032","IDS-008",115,7,2011-03-03,"Meei-Li Huang","aliquoted in house",2011-03-28
+"IDS-0000033","IDS-001",78,3,2012-06-17,"Bilbo Baggins","Iron Hills",2012-11-11
+"IDS-0000034","IDS-002",58,5,2012-12-31,"Frodo Baggins","The Shire",NA
+"IDS-0000035","IDS-003",37,32,2012-02-29,"Jane Kuypers","Iron Hills",2012-07-29
+"IDS-0000036","IDS-004",75,1,2010-10-19,"Frodo Baggins","Rivendell",2010-10-26
+"IDS-0000037","IDS-005",68,19,2011-10-29,"Meei-Li Huang","Rohan",2012-02-05
+"IDS-0000038","IDS-006",1,6,2011-09-16,"Peregrin Took","Iron Hills",2012-01-06
+"IDS-0000039","IDS-007",136,18,2012-04-29,"Bilbo Baggins","Isengard",2012-06-11
+"IDS-0000040","IDS-008",87,16,2012-04-14,"Aragorn","Rivendell",2012-04-30
+"IDS-0000041","IDS-001",39,5,2010-11-09,"not yet shipped","Isengard",2010-11-24
+"IDS-0000042","IDS-002",61,24,2011-07-21,"Meriadoc Brandybuck","Iron Hills",2011-10-11
+"IDS-0000043","IDS-003",83,9,2011-10-11,"Boromir","Iron Hills",2012-02-02
+"IDS-0000044","IDS-004",67,14,2012-12-21,"NA","The Shire",NA
+"IDS-0000045","IDS-005",7,25,2012-09-19,"Boromir","aliquoted in house",2012-09-20
+"IDS-0000046","IDS-006",36,34,2012-09-09,"NA","Rivendell",2013-01-31
+"IDS-0000047","IDS-007",30,51,2010-07-08,"Gandalf the Grey","Lothlorien",2011-01-24
+"IDS-0000048","IDS-008",157,1,2012-01-19,"Frodo Baggins","Molecular Diagnostics",2012-02-12
+"IDS-0000049","IDS-001",85,20,2011-02-18,"Gimli son of Gloin","Isengard",2011-03-11
+"IDS-0000050","IDS-002",26,6,2012-01-12,"Meei-Li Huang","Lothlorien",2012-03-06
+"IDS-0000051","IDS-003",54,22,2012-04-10,"Bilbo Baggins","aliquoted in house",2012-10-05
+"IDS-0000052","IDS-004",98,48,2011-07-30,"Frodo Baggins","Lothlorien",2011-09-10
+"IDS-0000053","IDS-005",76,1,2012-01-06,"Meei-Li Huang","Isengard",2012-06-08
+"IDS-0000054","IDS-006",111,14,2010-07-07,"Gandalf the Grey","aliquoted in house",2010-08-05
+"IDS-0000055","IDS-007",11,20,2010-07-15,"not yet shipped","Rivendell",2010-08-01
+"IDS-0000056","IDS-008",7,30,2012-03-06,"Frodo Baggins","Iron Hills",2012-03-29
+"IDS-0000057","IDS-001",17,15,2011-10-08,"Boromir","Molecular Diagnostics",2012-03-11
+"IDS-0000058","IDS-002",51,26,2012-06-22,"not yet shipped","aliquoted in house",2012-08-30
+"IDS-0000059","IDS-003",29,12,2012-04-15,"Frodo Baggins","aliquoted in house",2012-08-14
+"IDS-0000060","IDS-004",48,14,2011-12-28,"Boromir","Molecular Diagnostics",2012-05-17
+"IDS-0000061","IDS-005",35,37,2010-06-10,"NA","Isengard",2010-07-19
+"IDS-0000062","IDS-006",95,11,2010-12-11,"Jane Kuypers","aliquoted in house",2011-01-24
+"IDS-0000063","IDS-007",22,47,2011-10-25,"Meriadoc Brandybuck","Rivendell",2011-11-07
+"IDS-0000064","IDS-008",6,1,2012-02-05,"not yet shipped","aliquoted in house",2012-06-23
+"IDS-0000065","IDS-001",12,16,2011-01-27,"Jane Kuypers","Lothlorien",2011-06-11
+"IDS-0000066","IDS-002",153,16,2012-01-04,"Aragorn","Molecular Diagnostics",2012-04-29
+"IDS-0000067","IDS-003",46,32,2011-05-17,"Frodo Baggins","The Shire",2011-08-30
+"IDS-0000068","IDS-004",18,38,2010-05-27,"NA","Iron Hills",2010-06-15
+"IDS-0000069","IDS-005",33,19,2010-08-14,"Gandalf the Grey","Iron Hills",2011-02-20
+"IDS-0000070","IDS-006",16,13,2010-11-03,"Jane Kuypers","Isengard",2011-05-06
+"IDS-0000071","IDS-007",195,36,2010-07-11,"Boromir","aliquoted in house",2010-12-14
+"IDS-0000072","IDS-008",106,22,2011-10-30,"Peregrin Took","Molecular Diagnostics",2012-02-27
+"IDS-0000073","IDS-001",18,17,2012-08-21,"Peregrin Took","Rivendell",2013-01-04
+"IDS-0000074","IDS-002",72,1,2011-07-28,"Boromir","Molecular Diagnostics",2011-09-04
+"IDS-0000075","IDS-003",117,44,2013-01-01,"NA","aliquoted in house",NA
+"IDS-0000076","IDS-004",6,57,2011-02-23,"Peregrin Took","aliquoted in house",2011-05-17
+"IDS-0000077","IDS-005",188,33,2013-01-08,"Boromir","Rivendell",NA
+"IDS-0000078","IDS-006",62,1,2011-04-08,"Peregrin Took","Iron Hills",2011-09-04
+"IDS-0000079","IDS-007",24,28,2010-04-06,"Gandalf the Grey","Rivendell",2010-08-29
+"IDS-0000080","IDS-008",50,10,2012-05-07,"Gimli son of Gloin","The Shire",2012-05-16
+"IDS-0000081","IDS-001",24,45,2012-10-19,"Gandalf the Grey","Rivendell",2012-11-25
+"IDS-0000082","IDS-002",30,29,2010-10-14,"not yet shipped","The Shire",2011-02-14
+"IDS-0000083","IDS-003",81,9,2011-03-28,"Jane Kuypers","Iron Hills",2011-09-12
+"IDS-0000084","IDS-004",78,8,2012-01-07,"Boromir","The Shire",2012-03-28
+"IDS-0000085","IDS-005",144,39,2011-03-30,"NA","Rivendell",2011-07-05
+"IDS-0000086","IDS-006",41,10,2012-09-11,"Bilbo Baggins","Isengard",2012-11-21
+"IDS-0000087","IDS-007",15,27,2012-04-27,"Aragorn","Lothlorien",2012-11-12
+"IDS-0000088","IDS-008",73,34,2011-08-20,"Gimli son of Gloin","Rivendell",2011-09-23
+"IDS-0000089","IDS-001",4,10,2011-07-27,"Meriadoc Brandybuck","Rohan",2011-09-21
+"IDS-0000090","IDS-002",47,15,2010-09-06,"Frodo Baggins","Molecular Diagnostics",2010-12-24
+"IDS-0000091","IDS-003",59,13,2010-07-17,"Jane Kuypers","Rivendell",2010-11-07
+"IDS-0000092","IDS-004",72,17,2010-08-20,"Gandalf the Grey","Iron Hills",2010-09-25
+"IDS-0000093","IDS-005",69,35,2011-10-28,"not yet shipped","Molecular Diagnostics",2012-02-06
+"IDS-0000094","IDS-006",30,36,2012-03-03,"Peregrin Took","The Shire",2012-05-19
+"IDS-0000095","IDS-007",93,2,2010-10-30,"Meei-Li Huang","The Shire",2010-12-17
+"IDS-0000096","IDS-008",53,44,2010-10-24,"NA","aliquoted in house",2010-11-05
+"IDS-0000097","IDS-001",98,10,2012-09-17,"not yet shipped","aliquoted in house",2013-01-25
+"IDS-0000098","IDS-002",20,41,2012-04-03,"Bilbo Baggins","Lothlorien",2012-06-16
+"IDS-0000099","IDS-003",119,6,2011-12-18,"Bilbo Baggins","Molecular Diagnostics",2012-01-07
+"IDS-0000100","IDS-004",47,28,2011-05-16,"Meei-Li Huang","aliquoted in house",2011-08-14
+"IDS-0000101","IDS-005",0,12,2013-01-19,"NA","aliquoted in house",2013-02-02
+"IDS-0000102","IDS-006",11,9,2012-07-13,"Bilbo Baggins","Iron Hills",2012-09-29
+"IDS-0000103","IDS-007",37,12,2012-12-05,"Peregrin Took","Isengard",2013-02-06
+"IDS-0000104","IDS-008",201,14,2012-04-18,"Frodo Baggins","Molecular Diagnostics",2012-10-04
+"IDS-0000105","IDS-001",16,10,2012-09-03,"Peregrin Took","The Shire",2012-11-04
+"IDS-0000106","IDS-002",42,4,2011-06-27,"Jane Kuypers","Isengard",2011-09-14
+"IDS-0000107","IDS-003",2,16,2011-08-06,"not yet shipped","Rivendell",2011-11-14
+"IDS-0000108","IDS-004",18,16,2012-09-14,"Peregrin Took","Lothlorien",2012-09-20
+"IDS-0000109","IDS-005",95,22,2012-12-30,"Meei-Li Huang","Lothlorien",NA
+"IDS-0000110","IDS-006",1,5,2011-09-12,"Gandalf the Grey","aliquoted in house",2011-12-17
+"IDS-0000111","IDS-007",73,46,2012-03-15,"Bilbo Baggins","Lothlorien",2012-07-10
+"IDS-0000112","IDS-008",102,22,2010-03-01,"Aragorn","Rohan",2010-06-20
+"IDS-0000113","IDS-001",27,21,2011-02-06,"not yet shipped","Iron Hills",2011-08-18
+"IDS-0000114","IDS-002",21,10,2011-01-21,"NA","Isengard",2011-02-08
+"IDS-0000115","IDS-003",11,69,2011-12-07,"Peregrin Took","Rohan",2012-06-01
+"IDS-0000116","IDS-004",55,19,2012-06-13,"Gandalf the Grey","Iron Hills",2012-08-04
+"IDS-0000117","IDS-005",45,14,2011-01-23,"Gandalf the Grey","aliquoted in house",2011-03-19
+"IDS-0000118","IDS-006",38,45,2012-05-13,"Gimli son of Gloin","The Shire",2012-10-12
+"IDS-0000119","IDS-007",62,35,2013-01-31,"Jane Kuypers","Rivendell",NA
+"IDS-0000120","IDS-008",100,19,2010-06-09,"Boromir","The Shire",2010-10-14
+"IDS-0000121","IDS-001",26,24,2012-01-11,"Meei-Li Huang","The Shire",2012-03-19
+"IDS-0000122","IDS-002",16,28,2011-06-11,"Bilbo Baggins","Iron Hills",2011-11-17
+"IDS-0000123","IDS-003",56,25,2011-04-14,"Boromir","Lothlorien",2011-09-01
+"IDS-0000124","IDS-004",106,29,2010-03-25,"NA","Iron Hills",2010-08-25
+"IDS-0000125","IDS-005",66,36,2011-07-19,"Aragorn","Isengard",2011-08-15
+"IDS-0000126","IDS-006",57,40,2012-07-27,"Aragorn","Molecular Diagnostics",2012-08-04
+"IDS-0000127","IDS-007",103,11,2011-11-14,"Peregrin Took","Iron Hills",2012-03-01
+"IDS-0000128","IDS-008",81,35,2010-12-01,"Frodo Baggins","Iron Hills",2010-12-11
+"IDS-0000129","IDS-001",39,48,2012-09-16,"not yet shipped","Rohan",NA
+"IDS-0000130","IDS-002",35,66,2010-08-29,"Aragorn","aliquoted in house",2010-12-26
+"IDS-0000131","IDS-003",131,25,2011-12-21,"Gimli son of Gloin","Rohan",2012-04-06
+"IDS-0000132","IDS-004",115,7,2012-12-04,"not yet shipped","Rivendell",NA
+"IDS-0000133","IDS-005",78,3,2011-04-11,"Frodo Baggins","The Shire",2011-10-15
+"IDS-0000134","IDS-006",58,5,2011-02-26,"Boromir","Isengard",2011-05-24
+"IDS-0000135","IDS-007",37,32,2011-09-28,"Meriadoc Brandybuck","Iron Hills",2011-12-23
+"IDS-0000136","IDS-008",75,1,2011-09-17,"Aragorn","Rohan",2012-02-24
+"IDS-0000137","IDS-001",68,19,2010-09-25,"Aragorn","Rivendell",2010-10-23
+"IDS-0000138","IDS-002",1,6,2012-11-15,"Jane Kuypers","Isengard",NA
+"IDS-0000139","IDS-003",136,18,2012-11-02,"Jane Kuypers","Lothlorien",2013-01-17
+"IDS-0000140","IDS-004",87,16,2011-07-05,"Gandalf the Grey","The Shire",2011-11-10
+"IDS-0000141","IDS-005",39,5,2010-11-25,"NA","Molecular Diagnostics",2011-05-14
+"IDS-0000142","IDS-006",61,24,2012-05-31,"Frodo Baggins","Rohan",2012-06-05
+"IDS-0000143","IDS-007",83,9,2011-04-03,"Gimli son of Gloin","The Shire",2011-05-31
+"IDS-0000144","IDS-008",67,14,2011-08-10,"Meriadoc Brandybuck","Rivendell",2012-02-18
+"IDS-0000145","IDS-001",7,25,2011-02-25,"Aragorn","Iron Hills",2011-04-15
+"IDS-0000146","IDS-002",36,34,2010-05-21,"Gandalf the Grey","Rivendell",2010-08-21
+"IDS-0000147","IDS-003",30,51,2011-11-12,"not yet shipped","The Shire",2012-04-24
+"IDS-0000148","IDS-004",157,1,2012-06-11,"Gandalf the Grey","Lothlorien",2012-08-10
+"IDS-0000149","IDS-005",85,20,2012-12-23,"Peregrin Took","Rivendell",NA
+"IDS-0000150","IDS-006",26,6,2010-08-09,"Frodo Baggins","aliquoted in house",2011-01-02
+"IDS-0000151","IDS-007",54,22,2012-12-08,"Frodo Baggins","The Shire",NA
+"IDS-0000152","IDS-008",98,48,2011-04-04,"Jane Kuypers","Molecular Diagnostics",2011-06-13
+"IDS-0000153","IDS-001",76,1,2012-01-15,"NA","Lothlorien",2012-07-29
+"IDS-0000154","IDS-002",111,14,2011-07-18,"Peregrin Took","The Shire",2012-01-22
+"IDS-0000155","IDS-003",11,20,2010-04-04,"Bilbo Baggins","Isengard",2010-07-04
+"IDS-0000156","IDS-004",7,30,2011-06-29,"Jane Kuypers","The Shire",2011-10-01
+"IDS-0000157","IDS-005",17,15,2011-04-24,"Gandalf the Grey","aliquoted in house",2011-06-04
+"IDS-0000158","IDS-006",51,26,2011-09-15,"Peregrin Took","Rivendell",2012-02-25
+"IDS-0000159","IDS-007",29,12,2010-03-05,"NA","Molecular Diagnostics",2010-07-05
+"IDS-0000160","IDS-008",48,14,2010-09-02,"Meei-Li Huang","Isengard",2011-03-04
+"IDS-0000161","IDS-001",35,37,2012-05-27,"Gandalf the Grey","Lothlorien",2012-07-27
+"IDS-0000162","IDS-002",95,11,2012-07-29,"Aragorn","Molecular Diagnostics",2013-01-12
+"IDS-0000163","IDS-003",22,47,2011-08-15,"Boromir","Molecular Diagnostics",2011-12-31
+"IDS-0000164","IDS-004",6,1,2011-07-16,"Peregrin Took","Lothlorien",2011-08-18
+"IDS-0000165","IDS-005",12,16,2011-05-14,"Frodo Baggins","The Shire",2011-10-11
+"IDS-0000166","IDS-006",153,16,2010-12-20,"Jane Kuypers","Iron Hills",2011-02-23
+"IDS-0000167","IDS-007",46,32,2011-05-20,"Aragorn","Isengard",2011-06-11
+"IDS-0000168","IDS-008",18,38,2011-02-28,"Bilbo Baggins","Rivendell",2011-06-26
+"IDS-0000169","IDS-001",33,19,2012-06-23,"Boromir","Molecular Diagnostics",2012-07-25
+"IDS-0000170","IDS-002",16,13,2012-02-18,"Peregrin Took","Molecular Diagnostics",2012-05-17
+"IDS-0000171","IDS-003",195,36,2011-12-05,"Meriadoc Brandybuck","Rohan",2011-12-31
+"IDS-0000172","IDS-004",106,22,2012-01-14,"Aragorn","Isengard",2012-03-20
+"IDS-0000173","IDS-005",18,17,2010-07-05,"Boromir","Molecular Diagnostics",2010-11-08
+"IDS-0000174","IDS-006",72,1,2010-03-23,"Boromir","Iron Hills",2010-06-04
+"IDS-0000175","IDS-007",117,44,2010-06-17,"Bilbo Baggins","Rivendell",2010-12-09
+"IDS-0000176","IDS-008",6,57,2012-02-16,"Frodo Baggins","Isengard",2012-08-07
+"IDS-0000177","IDS-001",188,33,2010-04-05,"Boromir","aliquoted in house",2010-10-08
+"IDS-0000178","IDS-002",62,1,2011-03-17,"Gimli son of Gloin","Rohan",2011-05-06
+"IDS-0000179","IDS-003",24,28,2010-11-02,"Aragorn","aliquoted in house",2011-04-22
+"IDS-0000180","IDS-004",50,10,2010-10-08,"NA","The Shire",2010-12-11
+"IDS-0000181","IDS-005",24,45,2010-03-13,"Gimli son of Gloin","Molecular Diagnostics",2010-07-24
+"IDS-0000182","IDS-006",30,29,2010-07-02,"Meriadoc Brandybuck","Iron Hills",2011-01-03
+"IDS-0000183","IDS-007",81,9,2010-11-18,"Gimli son of Gloin","Rohan",2011-02-21
+"IDS-0000184","IDS-008",78,8,2010-03-08,"Bilbo Baggins","The Shire",2010-03-12
+"IDS-0000185","IDS-001",144,39,2011-12-06,"Gandalf the Grey","Isengard",2012-02-28
+"IDS-0000186","IDS-002",41,10,2012-02-15,"Gimli son of Gloin","Iron Hills",2012-06-04
+"IDS-0000187","IDS-003",15,27,2012-10-17,"Meei-Li Huang","Molecular Diagnostics",NA
+"IDS-0000188","IDS-004",73,34,2010-01-16,"Bilbo Baggins","The Shire",2010-04-11
+"IDS-0000189","IDS-005",4,10,2012-11-29,"Gimli son of Gloin","Isengard",NA
+"IDS-0000190","IDS-006",47,15,2010-05-03,"Jane Kuypers","Molecular Diagnostics",2010-10-11
+"IDS-0000191","IDS-007",59,13,2010-08-21,"Gandalf the Grey","Lothlorien",2010-12-14
+"IDS-0000192","IDS-008",72,17,2010-01-25,"Jane Kuypers","Isengard",2010-03-01
+"IDS-0000193","IDS-001",69,35,2010-03-31,"Gandalf the Grey","Iron Hills",2010-10-08
+"IDS-0000194","IDS-002",30,36,2010-06-30,"Meei-Li Huang","aliquoted in house",2010-09-05
+"IDS-0000195","IDS-003",93,2,2011-03-02,"Frodo Baggins","aliquoted in house",2011-04-16
+"IDS-0000196","IDS-004",53,44,2010-12-06,"Jane Kuypers","Lothlorien",2010-12-09
+"IDS-0000197","IDS-005",98,10,2012-03-01,"Peregrin Took","Iron Hills",2012-08-05
+"IDS-0000198","IDS-006",20,41,2012-10-05,"Frodo Baggins","Iron Hills",2012-10-16
+"IDS-0000199","IDS-007",119,6,2010-04-30,"Aragorn","Iron Hills",2010-09-14
+"IDS-0000200","IDS-008",47,28,2011-05-03,"Boromir","The Shire",2011-08-15
