@@ -8,7 +8,7 @@ proj.tube.no <- round(abs(rnorm(100, sd=60, mean=50)))
 Start <- as.Date("2010-01-01")
 End <- as.Date("2013-01-31")
 date.out <- Start + sample.int(End-Start, 200)
-names <- c("not yet shipped", "NA", "Jane Kuypers", "Meei-Li Huang", 
+names <- c("not yet shipped", "NA", "Radagast", "Thorin Oakenshield", 
            "Frodo Baggins", "Bilbo Baggins", "Meriadoc Brandybuck",
            "Gimli son of Gloin", "Peregrin Took",
            "Gandalf the Grey", "Aragorn", 'Boromir')
