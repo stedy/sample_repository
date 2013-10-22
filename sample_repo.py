@@ -7,7 +7,7 @@ from contextlib import closing
 from werkzeug import check_password_hash, generate_password_hash
 import datetime as dt
 
-DATABASE = 'mb.db'
+DATABASE = 'sample_repo.db'
 DEBUG = True
 SECRET_KEY = 'development key'
 DOWNLOAD_FOLDER = 'downloads'

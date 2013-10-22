@@ -1,0 +1,3 @@
+*.db
+*.pyc
+static/sorttable.js
