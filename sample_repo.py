@@ -82,10 +82,14 @@ def login():
         else:
             session['logged_in'] = True
             flash('You were logged in')
-            return redirect(url_for('pt_demo'))
+            return render_template('index.html')
     return render_template('login.html', error = error)
 
- 
+@app.route('/main')
+def main():
+    return render_template('index.html')
+
+
 @app.route('/all_samples', methods = ['GET', 'POST'])
 def all_samples():
 	error = None
