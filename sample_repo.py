@@ -3,7 +3,7 @@ import time
 import os
 import csv
 from flask import Flask, request, session, g, redirect, url_for \
-        , abort, render_template, flash, jsonify
+        , render_template, flash, jsonify
 from werkzeug import check_password_hash, generate_password_hash, \
         secure_filename
 from contextlib import closing
@@ -37,11 +37,11 @@ def get_user_id(username):
     return rv[0] if rv else None
 
 def query_db(query, args=(), one = False):
-	"""Queries the database and returns a list of dictionaries"""
-	cur = g.db.execute(query, args)
-	rv = [dict((cur.description[idx][0], value)
-		for idx, value in enumerate(row)) for row in cur.fetchall()]
-	return (rv[0] if rv else None) if one else rv
+    """Queries the database and returns a list of dictionaries"""
+    cur = g.db.execute(query, args)
+    rv = [dict((cur.description[idx][0], value)
+        for idx, value in enumerate(row)) for row in cur.fetchall()]
+    return (rv[0] if rv else None) if one else rv
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -121,6 +121,20 @@ def indiv_results(irs_id):
 @app.route('/query')
 def query():
     return render_template('subj_query.html')
+
+@app.route('/results', methods = ['GET', 'POST'])
+def results():
+    ids = str(request.form['irs_id'])
+    entries = query_db("""select demo.irs_id, ptdon, sample_res, sample_type,
+                            sourcecoll, sample_acc, coldate, pt_name, txdate,
+                            donor_names, signed9, proj_id, proj_tube_no,
+                            proj_cell, date_out, shipped_to, sent_to,
+                            received_date from demo, sample_movement where
+                            demo.irs_id = sample_movement.irs_id and
+                            demo.irs_id = ?""", [ids])
+    return render_template('get_results.html', entries = entries)
+
+
 
 @app.route('/multiple_search', methods = ['GET', 'POST'])
 def multiple_search():

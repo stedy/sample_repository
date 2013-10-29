@@ -3,8 +3,8 @@
   {% if g.user %}
       <ul class=metanav>
             </ul>
-                {% endif %}
-<a href="#" class="classname">TEXT</a>
-<a href="#" class="classname">TEXT 1</a>
-<a href="#" class="classname">TEXT 2</a>
+  {% endif %}
+<a href="#" class="classname">Receive Samples</a>
+<a href="#" class="classname">Send Samples</a>
+<a href="{{ url_for('query') }}" class="classname">Lookup Individual Sample</a>
 {% endblock %}
