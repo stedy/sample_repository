@@ -3,3 +3,4 @@
 *.pg
 *.pyc
 static/sorttable.js
+uploads
