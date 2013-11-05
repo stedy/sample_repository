@@ -7,6 +7,6 @@
 <a href="#" class="classname">Receive Samples</a>
 <a href="{{ url_for('create_project') }}" class="classname">Send Samples</a>
 <a href="{{ url_for('query') }}" class="classname">Lookup Individual Sample</a>
-<a href="#" class="classname">Lookup Multiple Samples</a>
+<a href="{{ url_for('project_query') }}" class="classname">Lookup Project</a>
 <a href="{{ url_for('all_samples') }}" class="classname">View All Samples</a>
 {% endblock %}

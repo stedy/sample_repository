@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+  {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %}
+    <form action="{{ url_for('project_results') }}" method=post class=test>
+      <table>
+        <td><b>Project ID:
+            <td><input type=text size=10 name=proj_id></td></tr>
+          <tr><td><input type=submit value="Search by Project ID"></td></tr>
+        </table>
+    </form>
+    {% endif %}   
+    <ul class=results>
+        <em>Search by project number</em>
+    </ul>
+<div class=footer>
+</div>
+    {% endblock %}

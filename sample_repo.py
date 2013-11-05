@@ -91,11 +91,11 @@ def main():
 
 @app.route('/all_samples', methods = ['GET', 'POST'])
 def all_samples():
-	error = None
-	entries = query_db("""SELECT irs_id, proj_id, proj_tube_no,
+    error = None
+    entries = query_db("""SELECT irs_id, proj_id, proj_tube_no,
                         proj_cell, date_moved, location
                         FROM sample_location""", one = False )
-	return render_template('all_samples.html', entries = entries)
+    return render_template('all_samples.html', entries = entries)
 
 @app.route('/all_patients', methods = ['GET', 'POST'])
 def pt_demo():
@@ -120,6 +120,10 @@ def indiv_results(irs_id):
 def query():
     return render_template('subj_query.html')
 
+@app.route('/project_query')
+def project_query():
+    return render_template('project_query.html')
+
 @app.route('/results', methods = ['GET', 'POST'])
 def results():
     ids = str(request.form['irs_id'])
@@ -132,22 +136,33 @@ def results():
                             demo.irs_id = ?""", [ids])
     return render_template('indiv_results.html', entries = entries)
 
+@app.route('/project_results', methods = ['GET', 'POST'])
+def project_results():
+    pid = str(request.form['proj_id'])
+    entries = query_db("""SELECT irs_id, proj_id, proj_tube_no, proj_cell,
+                        date_moved, location FROM sample_location WHERE
+                        proj_id = ?""", [pid])
+    count = query_db("""SELECT COUNT(*) as proj_count FROM sample_location WHERE
+                    proj_id = ?""", [pid])
+    return render_template('project_results.html', entries = entries,
+            count = count, pid=pid)
+
 @app.route('/create_project', methods = ['GET', 'POST'])
 def create_project():
-            return render_template('create_project.html')
+    return render_template('create_project.html')
 
 @app.route('/send_samples', methods = ['GET', 'POST'])
 def send_samples():
-            return render_template('create_project.html')
+    return render_template('create_project.html')
 
 @app.route('/submit_send', methods = ['GET', 'POST'])
 def submit_send():
     error = "Please upload a file to proceed"
     if request.method == 'POST':
-        file = request.files['file']
-        if file and allowed_file(file.filename):
-            filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        infile = request.files['file']
+        if infile and allowed_file(infile.filename):
+            filename = secure_filename(infile.filename)
+            infile.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             indivs = get_ids(os.path.join(app.config['UPLOAD_FOLDER'],
                 filename))
             #print os.path.join(app.config['UPLOAD_FOLDER'],filename)
@@ -165,10 +180,7 @@ def submit_send():
             g.db.commit()
             return render_template('send_samples.html', entries=entries,
                     error=error)
-
     return render_template('index.html', error = error)
-
-#test for facebook-style timeline
 
 @app.route('/ship_samples', methods = ['GET', 'POST'])
 def ship_samples():
@@ -192,7 +204,6 @@ def test_indiv_results(irs_id):
 @app.errorhandler(404)
 def page_not_found(e):
 	return render_template('404.html'), 404
-
 
 @app.route('/logout')
 def logout():

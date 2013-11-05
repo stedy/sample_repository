@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+    <ul class=metanav>
+    </ul>    
+    <ul class=results>
+      <h2>Info for Project {{ pid }} with {{ count[0].proj_count }} samples</h2>
+  <table>
+    <tr><td><b>IRS ID</b></td>
+  <td><b>Project Tube Number</td>
+  <td><b>Project Cell</td>
+  <td><b>Date Moved</td>
+  <td><b>Sample Location</td>
+  {% for entry in entries %}
+  <tr><td><a href="{{ url_for('indiv_results', irs_id=entry.irs_id)}}">{{ entry.irs_id }}</a></td>
+<td>{{ entry.proj_tube_no }}</td>
+<td>{{ entry.proj_cell }}</td>
+<td>{{ entry.date_moved }}</td>
+<td> {{ entry.location }}</td></tr>
+
+  {% else %}
+  <br></br>
+	<h2>Sad Panda is sad because that project does not exist</h2>
+	</td></tr>
+	<img src="/static/sad_panda.jpg" >
+        {% endfor %}
+  </table>
+    </ul>
+    {% endif %}
+{% endblock %}
