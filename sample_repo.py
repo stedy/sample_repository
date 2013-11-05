@@ -1,9 +1,9 @@
 import sqlite3
-import time
+import datetime as dt
 import os
 import csv
 from flask import Flask, request, session, g, redirect, url_for \
-        , render_template, flash, jsonify
+        , render_template, flash
 from werkzeug import check_password_hash, generate_password_hash, \
         secure_filename
 from contextlib import closing
@@ -116,11 +116,6 @@ def indiv_results(irs_id):
                             demo.irs_id = ?""", [ids])
     return render_template('get_results.html', entries = entries)
 
-#@app.route('/receive_samples')
-#def receive_samples():
-#    sample_id = request.form['sample_number']
-#    entries = query_db("""SELECT sample_info FROM base""", where id == 
-
 @app.route('/query')
 def query():
     return render_template('subj_query.html')
@@ -147,6 +142,7 @@ def send_samples():
 
 @app.route('/submit_send', methods = ['GET', 'POST'])
 def submit_send():
+    error = "Please upload a file to proceed"
     if request.method == 'POST':
         file = request.files['file']
         if file and allowed_file(file.filename):
@@ -154,13 +150,23 @@ def submit_send():
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             indivs = get_ids(os.path.join(app.config['UPLOAD_FOLDER'],
                 filename))
-            print os.path.join(app.config['UPLOAD_FOLDER'],filename)
-            print request.form['sent_to']
-            entries = query_db("""SELECT * FROM sample_movement WHERE irs_id IN
+            #print os.path.join(app.config['UPLOAD_FOLDER'],filename)
+            entries = query_db("""SELECT * FROM sample_location WHERE irs_id IN
                     (%s)""" % ','.join('?'*len(indivs)), indivs)
-            return render_template('send_samples.html', entries=entries)
+            print entries
+            for entry in entries:
+                print entry['irs_id']
+                g.db.execute("""UPDATE sample_location SET date_moved = ?,
+                            location = ?, proj_id = ? WHERE irs_id = ?""",
+                                [dt.datetime.today().strftime("%Y-%m-%d"),
+                                    request.form['sent_to'],
+                                    request.form['shipment_id'],
+                                    entry['irs_id']])
+            g.db.commit()
+            return render_template('send_samples.html', entries=entries,
+                    error=error)
 
-    return render_template('index.html')
+    return render_template('index.html', error = error)
 
 #test for facebook-style timeline
 
@@ -172,7 +178,8 @@ def ship_samples():
 def test_movement():
 	error = None
 	entries = query_db("""SELECT irs_id, max(datestamp),
-                        sent_from, datestamp, site FROM test_movement GROUP BY irs_id""", one = False ) 
+                        sent_from, datestamp, site FROM test_movement 
+                        GROUP BY irs_id""", one = False )
 	return render_template('test_movement.html', entries = entries)
 
 @app.route('/movement/<irs_id>', methods = ['GET', 'POST'])
@@ -191,8 +198,7 @@ def page_not_found(e):
 def logout():
     session.pop('logged_in', None)
     flash('You were logged out')
-    return redirect(url_for('login'))	
-
+    return redirect(url_for('login'))
 
 if __name__ == '__main__':
     app.run()

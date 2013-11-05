@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if g.user %}
+    <ul class=metanav>
+    </ul>
+    {% endif %}
+    <h1>Sample Manifest</h1>
+      <table class="inlineTable">
+        <tr><td><b>IDS ID</td>
+        <td><b>PID</td>
+          <td><b>Tube no.</td>
+            <td><b>Cell no.</td></tr>
+      {% for entry in entries %}
+      <tr><td>{{ entry.irs_id }}</td>
+      <td>{{ entry.proj_id }}</td>
+      <td>{{ entry.proj_tube_no }}</td>
+      <td>{{ entry.proj_cell }}</td>
+        {% endfor %}
+      </table>
+      <table class="inlineTable">
+        <tr><td style="vertical-align:top">Shipment ID</td><td><input type=text size=20 name=shipment_id></td></tr>
+        <tr><td>Sent To</td><td><input type=text size=20 name=sent_to></td></tr>
+      </table>
+	<br>
+    {% endblock %}
