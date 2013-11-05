@@ -31,8 +31,12 @@ table {
 }
 
 td {
-  padding: 2px 2px 2px 5px;
+  padding: 2px 2px 2px 5px; vertial-align:top;
 }
+
+.inlineTable {
+    display:inline-block; vertical-align:top;
+  }
 
 tr:nth-child(2n+1) {
   background-color: #DDECEF;

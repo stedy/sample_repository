@@ -5,7 +5,7 @@
             </ul>
   {% endif %}
 <a href="#" class="classname">Receive Samples</a>
-<a href="#" class="classname">Send Samples</a>
+<a href="{{ url_for('create_project') }}" class="classname">Send Samples</a>
 <a href="{{ url_for('query') }}" class="classname">Lookup Individual Sample</a>
-<a href="{{ url_for('multiple_search') }}" class="classname">Lookup Multiple Samples</a>
+<a href="#" class="classname">Lookup Multiple Samples</a>
 {% endblock %}
