@@ -110,9 +110,9 @@ def indiv_results(irs_id):
     entries = query_db("""SELECT demo.irs_id, ptdon, sample_res, sample_type,
                             sourcecoll, sample_acc, coldate, pt_name, txdate,
                             donor_names, signed9, proj_id, proj_tube_no,
-                            proj_cell, date_out, shipped_to, sent_to,
-                            received_date FROM demo, sample_movement where
-                            demo.irs_id = sample_movement.irs_id and
+                            proj_cell, date_moved,
+                            location FROM demo, sample_location where
+                            demo.irs_id = sample_location.irs_id and
                             demo.irs_id = ?""", [ids])
     return render_template('get_results.html', entries = entries)
 
@@ -176,11 +176,11 @@ def ship_samples():
 
 @app.route('/test_movement', methods = ['GET', 'POST'])
 def test_movement():
-	error = None
-	entries = query_db("""SELECT irs_id, max(datestamp),
-                        sent_from, datestamp, site FROM test_movement 
-                        GROUP BY irs_id""", one = False )
-	return render_template('test_movement.html', entries = entries)
+    error = None
+    entries = query_db("""SELECT irs_id, max(datestamp),
+                        sent_from, datestamp, site FROM test_movement
+                        GROUP BY irs_id""", one = False)
+    return render_template('test_movement.html', entries = entries)
 
 @app.route('/movement/<irs_id>', methods = ['GET', 'POST'])
 def test_indiv_results(irs_id):
