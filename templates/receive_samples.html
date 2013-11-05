@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+  {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %}
+    <form action="{{ url_for('receive_samples') }}" method=post class=test>
+      <table>
+        <td><b>Project ID:
+            <td><input type=text size=10 name=proj_id></td></tr>
+          <tr><td><input type=submit value="Receive Project ID"></td></tr>
+        </table>
+    </form>
+    {% endif %}   
+    <ul class=results>
+        <em>Enter project number to receive sample</em>
+    </ul>
+<div class=footer>
+</div>
+    {% endblock %}

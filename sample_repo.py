@@ -4,8 +4,7 @@ import os
 import csv
 from flask import Flask, request, session, g, redirect, url_for \
         , render_template, flash
-from werkzeug import check_password_hash, generate_password_hash, \
-        secure_filename
+from werkzeug import secure_filename
 from contextlib import closing
 
 DATABASE = 'sample_repo.db'
@@ -182,9 +181,24 @@ def submit_send():
                     error=error)
     return render_template('index.html', error = error)
 
-@app.route('/ship_samples', methods = ['GET', 'POST'])
-def ship_samples():
-    pass
+#@app.route('/ship_samples', methods = ['GET', 'POST'])
+#def ship_samples():
+#    pass
+
+@app.route('/return_samples')
+def return_samples():
+    return render_template('receive_samples.html')
+
+@app.route('/receive_samples', methods = ['GET', 'POST'])
+def receive_samples():
+    pid = str(request.form['proj_id'])
+    g.db.execute("""UPDATE sample_location SET date_moved = ?,
+                    location = ? WHERE proj_id = ?""",
+                    [dt.datetime.today().strftime("%Y-%m-%d"),
+                    "Our Freezer", pid])
+    g.db.commit()
+    flash('Project %s was received back into our Freezer' % pid)
+    return render_template('index.html')
 
 @app.route('/test_movement', methods = ['GET', 'POST'])
 def test_movement():
@@ -203,7 +217,7 @@ def test_indiv_results(irs_id):
 
 @app.errorhandler(404)
 def page_not_found(e):
-	return render_template('404.html'), 404
+    return render_template('404.html'), 404
 
 @app.route('/logout')
 def logout():
