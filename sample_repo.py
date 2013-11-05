@@ -92,9 +92,9 @@ def main():
 @app.route('/all_samples', methods = ['GET', 'POST'])
 def all_samples():
 	error = None
-	entries = query_db("""SELECT irs_id, proj_id, proj_tube_no, 
-                        proj_cell, date_out, shipped_to,
-                        sent_to, received_date from sample_movement""", one = False ) 
+	entries = query_db("""SELECT irs_id, proj_id, proj_tube_no,
+                        proj_cell, date_moved, location
+                        FROM sample_location""", one = False )
 	return render_template('all_samples.html', entries = entries)
 
 @app.route('/all_patients', methods = ['GET', 'POST'])
