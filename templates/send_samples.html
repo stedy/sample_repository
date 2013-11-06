@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block body %}
-  {% if g.user %}
+{% if g.user %}
     <ul class=metanav>
     </ul>
     {% endif %}
@@ -18,8 +18,8 @@
         {% endfor %}
       </table>
       <table class="inlineTable">
-        <tr><td style="vertical-align:top">Shipment ID</td><td><input type=text size=20 name=shipment_id></td></tr>
-        <tr><td>Sent To</td><td><input type=text size=20 name=sent_to></td></tr>
+        <tr><td style="vertical-align:top">Shipment ID</td><td>{{ pid }}</td></tr>
+        <tr><td>Sent To</td><td>{{ location }}</td></tr>
       </table>
 	<br>
     {% endblock %}

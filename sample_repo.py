@@ -167,7 +167,6 @@ def submit_send():
             #print os.path.join(app.config['UPLOAD_FOLDER'],filename)
             entries = query_db("""SELECT * FROM sample_location WHERE irs_id IN
                     (%s)""" % ','.join('?'*len(indivs)), indivs)
-            print entries
             for entry in entries:
                 print entry['irs_id']
                 g.db.execute("""UPDATE sample_location SET date_moved = ?,
@@ -176,14 +175,14 @@ def submit_send():
                                     request.form['sent_to'],
                                     request.form['shipment_id'],
                                     entry['irs_id']])
-            g.db.commit()
-            return render_template('send_samples.html', entries=entries,
-                    error=error)
-    return render_template('index.html', error = error)
 
-#@app.route('/ship_samples', methods = ['GET', 'POST'])
-#def ship_samples():
-#    pass
+                g.db.commit()
+            location = request.form['sent_to']
+            pid = request.form['shipment_id']
+            flash('Project %s was shipped to %s' % (pid, location))
+            return render_template('send_samples.html', entries=entries,
+                    error=error, location=location, pid=pid)
+    return render_template('index.html', error = error)
 
 @app.route('/return_samples')
 def return_samples():
