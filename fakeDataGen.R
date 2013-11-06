@@ -1,6 +1,6 @@
-#create some fake data for testing edge cases
+#create some fake data for testing flow and user experience
 #start with sample movement
-irs.id <- c(paste0("IDS-000000", 1:9), 
+irs.id <- c(paste0("IDS-000000", 1:9),
             paste0("IDS-00000", 10:99), paste0("IDS-0000", 100:200))
 proj.id <- rep(paste0("IDS-00", 1:8), times = 25)
 proj.cell <- round(abs(rnorm(100, sd=30)))
