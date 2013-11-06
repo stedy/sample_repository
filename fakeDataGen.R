@@ -7,23 +7,10 @@ proj.cell <- round(abs(rnorm(100, sd=30)))
 proj.tube.no <- round(abs(rnorm(100, sd=60, mean=50)))
 Start <- as.Date("2010-01-01")
 End <- as.Date("2013-01-31")
-date.out <- Start + sample.int(End-Start, 200)
-names <- c("not yet shipped", "NA", "Radagast", "Thorin Oakenshield", 
-           "Frodo Baggins", "Bilbo Baggins", "Meriadoc Brandybuck",
-           "Gimli son of Gloin", "Peregrin Took",
-           "Gandalf the Grey", "Aragorn", 'Boromir')
-shipped.to <- sample(names, 200, replace=T)
-places <- c("aliquoted in house", "Molecular Diagnostics", "The Shire", 
-            "Lothlorien", "Rivendell", "Isengard",
-            "Rohan", "Iron Hills")
-sent.to <- sample(places, 200, replace=T)
-received <- date.out + sample.int(200)
-received.logical <- ifelse(received > Sys.Date(), NA, received)
-class(received.logical) <- "Date"
+today <- Sys.Date()
+location <- "Our freezer"
 
-sampleFlow <- data.frame(irs.id, proj.id, proj.tube.no, proj.cell, 
-                   date.out, shipped.to,
-                   sent.to, received.logical)
+sampleFlow <- data.frame(irs.id, proj.id, proj.tube.no, proj.cell, today, location)
 write.csv(sampleFlow, "test_sampleFlow.csv", row.names=F)
 
 #then do info for each sample
