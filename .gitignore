@@ -1,6 +1,6 @@
 *.csv
 *.db
-*.pg
+*.jpg
 *.pyc
 static/sorttable.js
 uploads
