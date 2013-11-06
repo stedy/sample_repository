@@ -15,25 +15,29 @@ write.csv(sampleFlow, "test_sampleFlow.csv", row.names=F)
 
 #then do info for each sample
 
-ptdon <- sample(c("pt", "dnr"), 200, replace=T)
-sample.res <- sample(c("clinical", "research"), 200, replace=T)
-sample.type <- sample(c("serology", "HLA", "954", "ANT", "PCR"), 200, replace=T)
-source.collection <- sample(c("whole blood", "serum", "plasma"), 200, replace=T)
+ptdon <- sample(c("pt", "dnr"), 200, replace=TRUE)
+sample.res <- sample(c("clinical", "research"), 200, replace=TRUE)
+sample.type <- sample(c("serology", "HLA", "954", "ANT", "PCR"), 200, replace=TRUE)
+source.collection <- sample(c("whole blood", "serum", "plasma"), 200, replace=TRUE)
 sample.acc <- paste0(sample(LETTERS),  round(rnorm(200, mean=20000, sd = 5000)))
 collection.date <- Start - sample.int(End-Start, 200)
 patient.names <-  sample(c("Animal", "Beaker", "Beauregard", "Camilla the Chicken",
                     "Fozzie Bear", "George the Janitor ", "Kermit",
                     "Lew Zealand", "Link Hogthrob", "Pops", "Rizzo",
                     "Gonzo", "Rowlf", "Waldorf", "Statler",
-                    "Swedish Chef", "Scooter"), 200, replace=T)
+                    "Swedish Chef", "Scooter"), 200, replace=TRUE)
 tx1date <- collection.date - 1
 donor.names <- sample(c("Harry Potter", "Hermione Granger", "Ron Weasley",
                         "Ginny Weasley", "Albus Dumbledore", "Severus Snape",
                         "Luna Lovegood", "Moaning Mona",
                         "Hagrid"), 200, replace = T)
-signed9 <- sample(c("Y", "N"), 200, prob=c(.9, .5), replace=T)
+signed9 <- sample(c("Y", "N"), 200, prob=c(.9, .5), replace=TRUE)
 
 patient.info <- data.frame(irs.id, ptdon, sample.res, sample.type, source.collection,
                            sample.acc, collection.date, patient.names,
                            tx1date, donor.names, signed9)
-write.csv(patient.info, "test_patientInfo.csv", row.names=F)
+write.csv(patient.info, "test_patientInfo.csv", row.names=FALSE)
+
+#then generate fake ID numbers for testing
+test.ids <- sample(irs.id,25, replace=FALSE)
+write.table(test.ids, "IDs_for_testing.csv", row.names=FALSE, col.names=FALSE, sep=",")
