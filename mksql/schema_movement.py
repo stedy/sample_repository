@@ -1,7 +1,7 @@
 import csv
 import sqlite3
 
-connection = sqlite3.connect('../sample_repo.db')
+connection = sqlite3.connect('sample_repo.db')
 connection.text_factory = str
 cursor = connection.cursor()
 
@@ -12,7 +12,7 @@ cursor.execute("""CREATE table sample_location (irs_id text, proj_id text,
 
 connection.commit()
 
-csvre = csv.reader(open("../test_sampleFlow.csv", 'rb'), delimiter
+csvre = csv.reader(open("test_sampleFlow.csv", 'rb'), delimiter
 					= ",", quotechar='"')
 
 t = (csvre,)
